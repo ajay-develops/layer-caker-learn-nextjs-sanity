@@ -12,3 +12,11 @@ npm run dev
 
 - Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 - Open [http://localhost:3000/studio](http://localhost:3000/studio) to edit content.
+
+## Notes
+
+1. To render PortableText in the Nextjs front-end we need to
+
+- add the typography plugin in the front-end tsconfig.json
+- use the PortableText component from next-sanity.
+- Create a ./src/sanity/PortableTextComponents.tsx which contains the components to render against the type of component. Atleast add an image component there for image type.
