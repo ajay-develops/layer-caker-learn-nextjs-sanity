@@ -20,3 +20,9 @@ npm run dev
 - add the typography plugin in the front-end tsconfig.json
 - use the PortableText component from next-sanity.
 - Create a ./src/sanity/PortableTextComponents.tsx which contains the components to render against the type of component. Atleast add an image component there for image type.
+
+## Todo
+
+- redeploy website on vercel when the redirects change in studio
+- Complete functionality to post on social media automatically when a new post or page document is published
+- Understand JSON-ld structure and schemaTypes to improve SEO of a website
