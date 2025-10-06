@@ -18,6 +18,7 @@ export const postType = defineType({
         source: "title",
       },
     }),
+
     defineField({
       name: "author",
       type: "reference",
@@ -62,6 +63,14 @@ export const postType = defineType({
       name: "relatedPosts",
       type: "array",
       of: [{ type: "reference", to: { type: "post" } }],
+    }),
+    defineField({
+      name: "seo",
+      type: "seo",
+    }),
+    defineField({
+      name: "social",
+      type: "social",
     }),
   ],
   preview: {
