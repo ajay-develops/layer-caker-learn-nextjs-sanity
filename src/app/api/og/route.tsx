@@ -38,10 +38,10 @@ export async function GET(request: Request) {
   }
 
   const vibrantBackground =
-    // @ts-ignore
+    // @ts-expect-error idk
     data?.image?.asset?.metadata?.palette?.vibrant?.background ?? "#3B82F6";
   const darkVibrantBackground =
-    // @ts-ignore
+    // @ts-expect-error idk
     data?.image?.asset?.metadata?.palette?.darkVibrant?.background ?? "#3B82F6";
 
   const text = data.title || "";
@@ -68,7 +68,7 @@ export async function GET(request: Request) {
             <div tw="flex w-[500px] h-[630px] overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                // @ts-ignore
+                // @ts-expect-error idk
                 src={urlFor(data.image).width(500).height(630).url()}
                 alt=""
                 tw="w-full h-full object-cover"

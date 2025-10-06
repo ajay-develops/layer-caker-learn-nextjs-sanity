@@ -93,7 +93,7 @@ export function PageBuilder({
             );
           default:
             // This is a fallback for when we don't have a block type
-            // @ts-ignore
+            // @ts-expect-error idk
             return <div key={block._key}>Block not found: {block._type}</div>;
         }
       })}
